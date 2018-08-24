@@ -17,4 +17,4 @@
 
 ## Authors
 * Petropoulakis Panagiotis petropoulakispanagiotis@gmail.com
-* Andreas Charalambous and.charalampous@gmail.com
+* Andreas Charalambous and.charalampous@gmail.com (Thank you for the implementation of KNN classifier)
