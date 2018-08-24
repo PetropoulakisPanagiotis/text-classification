@@ -4,7 +4,7 @@
 
 Classify articles in categories <br /> 
 There are two data sets: train_set.csv (12267 data points), test_set.csv (3068 data points). <br />
-Train set has 4 fields: Id, Title, Content, Category(Politics/Film/Football/Business/Technology), RowNum.
+Train set has 5 fields: Id, Title, Content, Category(Politics/Film/Football/Business/Technology), RowNum.
 Our goal is to find the best classifier for our train set and predict the categories of the articles of the test set. 
 
 ## Requirements
