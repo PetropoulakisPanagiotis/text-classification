@@ -8,7 +8,7 @@
 1. Python 2.7
 2. Scikit-learn
 3. Pandas
-4. nltk
+4. NLTK
 5. matplotlib
 6. wordcloud(https://github.com/amueller/word_cloud)
 
