@@ -5,11 +5,15 @@
 ## How It Works
 
 ## Requirements
-
+1. Python 2.7
+2. Scikit-learn
+3. Pandas
+4. nltk
+5. matplotlib
+6. wordcloud(https://github.com/amueller/word_cloud)
 
 ## Helpful Links: 
 1. http://scikit-learn.org/
-
 
 ## Authors
 * Petropoulakis Panagiotis petropoulakispanagiotis@gmail.com
