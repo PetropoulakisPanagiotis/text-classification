@@ -66,8 +66,8 @@ X_train_cat = le_train.inverse_transform(X_train_le)
 # Create matrix of TF-IDF features #
 # Use title efficiently            #
 tfidf_vectorizer = TfidfVectorizer(stop_words=ENGLISH_STOP_WORDS)
-X_train_tfidf = tfidf_vectorizer.fit_transform(X_train + (5 * X_title))
-X_test_tfidf = tfidf_vectorizer.transform(X_test + (5 * Y_title))
+X_train_tfidf = tfidf_vectorizer.fit_transform(X_train + X_title)
+X_test_tfidf = tfidf_vectorizer.transform(X_test + Y_title)
 
 # Normalize data #
 norm = Normalizer()
