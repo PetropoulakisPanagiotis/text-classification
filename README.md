@@ -15,7 +15,7 @@ Our goal is to find the best classifier for our train set and predict the catego
 5. matplotlib
 6. wordcloud(https://github.com/amueller/word_cloud)
 
-## How It Works
+## How It Works(under construction**)
 1. At first run the wordcloud.py module. Wordcloud generates one file per category. 
 2. Before evaluating the classifiers we should find a better dimension for our articles(using lsi with constant classifier). In this way we could predict new categories faster, because we have less features after lsi. Lsi plot visualizes how the number of features affect accuracy.
 3. The best dimension is settled, so we can tune the hyper-parameters of the classifiers with grid search and cross-validation(avoid over-fitting) -> grind_search modules
