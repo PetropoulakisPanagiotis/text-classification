@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# Text classification
+# Text Classification
 <p align="center">
 <img src="https://cdn-images-1.medium.com/max/640/1*ljCBykAJUnvaZcuPYwm4_A.png" width="400" height="250"> <br />
 </p>
@@ -7,9 +7,9 @@
 Classify BBC articles into categories with scikit-learn
 
 ## How It Works
-There are two data sets. The train_set.csv with 12.267 data points and the test_set.csv with 3.068 data points. The train set contains 5 columns per article. ID, Title, Content, Category(Politics, Film, Football, Business, Technology) and RowNum. Our goal is to find the best classifier for this specific train set, and then use it to classify the articles of the test set. 
+There are two data sets. The train_set.csv with 12.267 data points and the test_set.csv with 3.068 data points. The train set contains 5 columns per article. ID, Title, Content, Category(Politics, Film, Football, Business, Technology) and RowNum. Our goal is to find the best classifier for this specific train set and then use it to classify the articles of the test set. 
 
-At first, you can gain an insight into the data set by running the wordcloud.py module to generate one Wordcloud for each category. Then, the next step is to prerpocce and convert the content of each article to a vector representation excluding stop-words and using the TFIDF Vectorizer method. After that, there is an additional step where each vector is downsampled to a lower dimension so as to reduce the execution time that each model needs to be trained and even increase the accurasy, as irelavant and redundant information can be removed. The best dimension with the best trade-off between accuracy and axecution time is 100 dimension(you can take a look into the lsi_plot.png). The next step is to use the 10-fold cross-validation method to train different models with our train set to find the best hyper-parameters(grid_search modules) for our problem. Then, by running the train_models.py module you can find which models perform the best to this specific problem(using the train set). After finding the best model and adding some extra preprocessing steps such as Porter Stemming and appending the title to each TFIDF vector, run the beat_the_benchmark.py to predict the categories of the test articles.     
+At first, you can gain an insight into the data set by running the wordcloud.py module to generate one Word Cloud for each category. Then, the next step is to preprocess and convert the content of each article to a vector representation, excluding stop-words and using the TFIDF Vectorizer method. After that, there is an additional step where each vector is down-sampled to a lower dimension to reduce the execution time that each model needs to be trained and even increase the accuracy, as irrelevant and redundant information can be removed. The best dimension with the best trade-off between accuracy and execution time is 100 dimensions (you can take a look into the lsi_plot.png). The next step is to use the 10-fold cross-validation method to train different models with our train set to find the best hyper-parameters(grid_search modules) for our problem. Then, by running the train_models.py module, you can find which models perform the best to this specific problem(using the train set). After finding the best model and adding some extra preprocessing steps such as Porter Stemming and appending the title to each TFIDF vector, run the beat_the_benchmark.py to predict the categories of the test articles.   
 
 ## Requirements
 1. Python 2.7
