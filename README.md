@@ -11,6 +11,8 @@ There are two data sets. The train_set.csv with 12.267 data points and the test_
 
 At first, you can gain an insight into the data set by running the wordcloud.py module to generate one Word Cloud for each category. Then, the next step is to preprocess and convert the content of each article into a vector representation, excluding stop-words and using the TFIDF Vectorizer method. After that, there is an additional step where each vector is down-sampled to a lower dimension to reduce the training time of each model and even increase their accuracy, as irrelevant and redundant information may be removed during this step. The best dimension with the best trade-off between accuracy and training time is 100 dimensions(you can take a look into the lsi_plot.png). The next step is to use the 10-fold cross-validation method to train different models with our train set and find the best hyper-parameters(grid_search modules). Then, by running the train_models.py module, you can find which model perform the best to this specific problem(using the train set). After finding the best model and adding some extra preprocessing steps such as Porter Stemming and appending the title to each TFIDF vector, you can run the beat_the_benchmark.py module to predict the categories of the test articles.   
 
+Note: the knn.py module is a custom implementation of the k-nearest neighbours algorithm
+
 ## Requirements
 1. Python 2.7
 2. Scikit-learn
