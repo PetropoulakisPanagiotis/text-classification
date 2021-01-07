@@ -4,7 +4,7 @@
 <img src="https://cdn-images-1.medium.com/max/640/1*ljCBykAJUnvaZcuPYwm4_A.png" width="400" height="250"> <br />
 </p>
 
-Classify BBC articlesinto categories
+Classify BBC articles into categories
 
 ## How It Works(under construction**)
 There are two data sets: train_set.csv (12267 data points), test_set.csv (3068 data points). <br />
